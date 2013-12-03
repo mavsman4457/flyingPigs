@@ -1,0 +1,44 @@
+#background
+{
+	width:600px;
+	height:338px;
+	background-image: url('../images/sky.jpg');
+	background-size:600px 338px;
+	background-repeat:no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+.pig
+{
+	width:10px;
+	height:10px;
+	padding: 30px;
+	background-image: url('../images/pig_flying.gif');
+	background-size:70px 70px;
+	background-repeat:no-repeat;
+	position: relative;
+}
+#one
+{
+	left:0px;
+}
+#two
+{
+	left:-1000px;
+}
+#three
+{
+	left:-400px;
+}
+#four
+{
+	left:-800px;
+}
+#five
+{
+	left:-600px;
+}
+#six
+{
+	left:-200px;
+}
