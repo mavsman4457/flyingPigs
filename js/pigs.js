@@ -29,15 +29,6 @@ $(document).ready(function(){
             case 54:
                 actualKey = 6;
                 break;
-            /*case 55:
-                actualKey = 7;
-                break;
-            case 56:
-                actualKey = 8;
-                break;
-            case 57:
-                actualKey = 9;
-                break;*/
         }
         var pigNum = actualKey-1;
         var topCoord = pigs[pigNum].offset().top;
@@ -72,15 +63,11 @@ $(document).ready(function(){
 
 function scrollPig(pigNum){
     setInterval(function(){
-        //var pig = $('#one');
-        var topCoord = pigs[pigNum].offset().top;
-        //console.log(pigs[pigNum].offset().left);
         if(pigs[pigNum].offset().left > 600){
             rollBack(pigNum);
         } else if(pigs[pigNum].offset().left < 600 && pigs[pigNum].offset().left > -40) {
             showing[pigNum] = 1;
         }
-        var topper = pigs[pigNum].offset().top;
         pigs[pigNum].animate({
             left : "+=10"
         },{ duration: 200, queue: false });
